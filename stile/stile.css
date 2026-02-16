@@ -24,6 +24,33 @@ h2{
     font-size: 24px;
 
 }
+button{
+
+    background-color: #3f57c8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Center buttons inside panels and make them block-level for easy centering */
+.informazioni button,
+.competenze button,
+.pannello button{
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.competenze button{
+
+    padding: 3%;
+
+}
+
 
 
 .header {
@@ -65,11 +92,12 @@ h2{
     box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
-/* Global hover effect for buttons */
-button:hover, .header button:hover {
+
+button:hover{
     transform: translateY(-4px) scale(1.02);
     background-color: #3f57c8;
     box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 
@@ -349,6 +377,17 @@ h3{
         min-height: auto;
     }
 
+    /* Mobile: make buttons full-width and centered inside their panels */
+    .informazioni button,
+    .competenze button,
+    .pannello button{
+        width: 100%;
+        max-width: 420px;
+        display: block;
+        margin: 0.75rem auto 0;
+        box-sizing: border-box;
+    }
+
     .competenze p {
         font-size: 16px;
     }
@@ -363,5 +402,13 @@ h3{
         width: 64px;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+
+    /* Mobile: popup should fit smaller screens */
+    .popup{
+        width: 60%;
+        max-width: 560px;
+        height: 70%;
+        max-height:926px ;
     }
 }
