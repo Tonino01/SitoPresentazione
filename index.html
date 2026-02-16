@@ -7,7 +7,7 @@
         <title>Presentazione</title>
         <link rel="stylesheet" type="text/css" href="stile/stile.css">
         <link rel = "icon" type=" immage/x-icon" href="immagini/iconaT.png" >
-        <script src="script/indexScript.js" ></script>
+        
 
     </head>
 
@@ -49,7 +49,7 @@
                     <p><img src="immagini/user96.png" alt="la mia persona">Studente del primo anno del corso Full Stack Developer, motivato e orientato alla crescita nel settore Web.</p>
                     <p><img src="immagini/interests64.png" alt="interesse">Mi interessa applicare competenze tecniche e sviluppare progetti concreti, con attitudine al lavoro in team.</p>
                     
-                
+                    <button onclick="apriPopup(4)">Storico Istruzione/Lavoro</button>
 
                 </div>
 
@@ -67,14 +67,17 @@
 
             <div class="competenze">
                 <p>programmazione di base orientata agli oggetti</p>
+                <button onclick="apriPopup(2) ">Dettagli</button>
             </div>
 
             <div class="competenze">
                 <p>sviluppo web (PHP, Javascript)</p>
+                <button onclick="apriPopup(3)">Dettagli</button>
             </div>
 
             <div class="competenze">
                 <p>Configurazione e Gestione di Pc e reti</p>
+                <button onclick="apriPopup(1)">Dettagli</button>
             </div>
 
 
@@ -103,9 +106,12 @@
         </div>
 
 
+        <div id = "containerPopUp">
 
 
+        </div>
 
 
+        <script src="script/indexScript.js" ></script>
     </body>
 </html>
